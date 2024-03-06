@@ -17,7 +17,7 @@
             border-radius: 10px;
             box-shadow: 0px 0px 3px 3px #888;
             top: 0px;
-            opacity: 0;
+            display: none;
         }
         .queen {
             border-radius: 8px;
@@ -63,7 +63,6 @@
             background: linear-gradient(45deg, #239b1e 0%, #333 100%);
         }
         .text-box {
-            margin-left: 14px;
             color: white;
         }
     </style>
@@ -76,18 +75,19 @@
                 <div class="col-6">
                     <img class="img-fluid queen white-queen" src="./img/white.jpg" />
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                     <div class="text-box">
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="text-box">
-                        Вадик
+                        <h5>Место встречи: А30.08</h5>
+                        Аксёнова Е. <br>
+                        Исакова Ю. <br>
+                        Камалетдинова Э. <br>
+                        Корбанкова А.<br>
+                        Крымская П.<br>
+                        Куржунова О.<br>
+                        Матвеева И.<br>
+                        Никифорова Н.<br>
+                        Орехова Н.<br>
+                        Смирнова К.
                     </div>
                 </div>
             </div>
@@ -98,19 +98,21 @@
                 <div class="col-6">
                     <img class="img-fluid queen red-queen" src="./img/red.jpg" />
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                     <div class="text-box">
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
+                        <h5>Место встречи: А30.13</h5>
+                        Бугрина Е.</br>
+                        Волоконская А.</br>
+                        Кочева С.</br>
+                        Лебедева О.</br>
+                        Маслова М.</br>
+                        Никулина А.</br>
+                        Сергеева Т.</br>
+                        Чурилова К.</br>
+                        Юсова Е.
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="text-box">
-                        Вадик
-                    </div>
+                <div class="col-6">
                 </div>
             </div>
         </div>
@@ -119,18 +121,23 @@
                 <div class="col-6">
                     <img class="img-fluid queen blue-queen" src="./img/blue.jpg" />
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                     <div class="text-box">
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
+                    <h5>Место встречи: А30.11</h5>
+                    Варламова В.</br>
+                    Евстафьева К.</br>
+                    Звержанская А.</br>
+                    Кобякова Л.</br>
+                    Малышева Е.</br>
+                    Нуржанова К.</br>
+                    Плешанова Т.</br>
+                    Соха Е.</br>
+                    Степанова А.</br>
+                    Трушкина О.
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                     <div class="text-box">
-                        Вадик
                     </div>
                 </div>
             </div>
@@ -140,18 +147,23 @@
                 <div class="col-6">
                     <img class="img-fluid queen yellow-queen" src="./img/yellow.jpg" />
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                     <div class="text-box">
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
+                        <h5>Место встречи: игровая</h5>
+                        Автономова Е.</br>
+                        Андриянкова И.</br>
+                        Бичан Я.</br>
+                        Еремеева Е.</br>
+                        Костышина Е.</br>
+                        Кузнецова М.</br>
+                        Лукьянова В.</br>
+                        Лукьянова В.</br>
+                        Проворотова Т.</br>
+                        Шубина Ю.
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                     <div class="text-box">
-                        Вадик
                     </div>
                 </div>
             </div>
@@ -161,18 +173,23 @@
                 <div class="col-6">
                     <img class="img-fluid queen green-queen" src="./img/green.jpg" />
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                     <div class="text-box">
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
-                        Вадик</br>
+                        <h5>Место встречи: диванная</h5>
+                        Абдуманатова О.</br>
+                        Волкова А.</br>
+                        Волошкина С.</br>
+                        Еговцева А.</br>
+                        Кочарян А.</br>
+                        Ли Г.</br>
+                        Обшарова Н.</br>
+                        Пилепенкова Н.</br>
+                        Соболева В.</br>
+                        Тарасова М.
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-6">
                     <div class="text-box">
-                        Вадик
                     </div>
                 </div>
             </div>
@@ -188,7 +205,7 @@
         let hasOpenedBox = false;
         const boxes =  [...document.querySelectorAll('[data-box]')];
         const hideAll = () => {
-            boxes.forEach(box => box.style.opacity = 0);
+            boxes.forEach(box => box.style.display = 'none');
         }
         
         [...document.querySelectorAll('[data-color]')].forEach(el => {
@@ -196,7 +213,7 @@
                 const c = el.dataset.color;
                 const box = document.querySelector(`[data-box=${c}]`);
                 hideAll();
-                box.style.opacity = 1;
+                box.style.display = 'block';
                 hasOpenedBox = true;
                 e.stopPropagation();
             });
